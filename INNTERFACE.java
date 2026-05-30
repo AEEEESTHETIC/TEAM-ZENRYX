@@ -15,7 +15,7 @@ public class INTERFACE extends Application {
     private Label titleLabel;
     private Label descLabel;
     private VBox forgotBox;
-
+    private VBox signUpBox;
 @Override
 public void start(Stage primaryStage) {
     HBox root = new HBox();
@@ -58,7 +58,26 @@ public void start(Stage primaryStage) {
 
 
 //NONDINI WILL START HER WORK AFTER THIS LINE:
+signUpBox = new VBox(15);
+        signUpBox.setAlignment(Pos.CENTER_LEFT);
+        signUpBox.setMaxWidth(420);
+        signUpBox.setVisible(false);
 
+        Label signupTitle = new Label("𝗦𝗜𝗚𝗡 𝗨𝗣");
+        signupTitle.setTextFill(Color.web("#00A8FF"));
+        signupTitle.setFont(Font.font("Arial", FontWeight.NORMAL, 32));
+
+        TextField fullName = new TextField();
+        fullName.setPromptText("𝗙𝗨𝗟𝗟 𝗡𝗔𝗠𝗘");
+        styleField(fullName);
+
+        TextField email = new TextField();
+        email.setPromptText("𝗘-𝗠𝗔𝗜𝗟");
+        styleField(email);
+
+        TextField username = new TextField();
+        username.setPromptText("𝗨𝗦𝗘𝗥 𝗡𝗔𝗠𝗘");
+        styleField(username);
 
 
 
