@@ -116,4 +116,11 @@ signUpBox = new VBox(15);
      Label forgotDesc = new Label(
         "𝗘𝗡𝗧𝗘𝗥 𝗬𝗢𝗨𝗥 𝗘𝗠𝗔𝗜𝗟 𝗔𝗗𝗗𝗥𝗘𝗦𝗦\n𝗧𝗢 𝗥𝗘𝗦𝗘𝗧 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗."
 );
-    
+     forgotDesc.setTextFill(Color.LIGHTGRAY);
+
+        TextField forgotEmail = new TextField();
+        forgotEmail.setPromptText("𝗘𝗡𝗧𝗘𝗥 𝗬𝗢𝗨𝗥 𝗘𝗠𝗔𝗜𝗟");
+        styleField(forgotEmail);
+
+        Button sendBtn = new Button("𝗦𝗘𝗡𝗗 𝗥𝗘𝗦𝗘𝗧 𝗟𝗜𝗡𝗞");
+        styleButton(sendBtn);  
