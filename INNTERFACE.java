@@ -27,6 +27,30 @@ public void start(Stage primaryStage) {
             "-fx-background-color: linear-gradient(to bottom right, #00A8FF, #005CFF);" +
            "-fx-background-radius: 0;"
     );
+     Label logo = new Label("𝗧𝗘𝗔𝗠 𝗭𝗘𝗡𝗥𝗬𝗫");
+        logo.setTextFill(Color.WHITE);
+        logo.setFont(Font.font("Arial", FontWeight.BOLD, 36));
+        Label developerText = new Label(
+                "𝗧𝗛𝗜𝗦 𝗜𝗡𝗧𝗘𝗥𝗙𝗔𝗖𝗘 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗗 𝗕𝗬\n" +
+                "𝗥𝗜𝗙𝗔𝗧 𝗡𝗢𝗪𝗦𝗛𝗜𝗡 𝗔𝗡𝗗 𝗡𝗢𝗡𝗗𝗜𝗡𝗜"
+        );
+        developerText.setTextFill(
+                Color.rgb(255,255,255,0.75)
+        );
+        developerText.setFont(
+                Font.font("Arial", FontWeight.BOLD, 15)
+        );
+        Label tagline = new Label(
+                "𝗧𝗛𝗘 𝗕𝗘𝗦𝗧 𝗪𝗔𝗬 𝗧𝗢 𝗣𝗥𝗘𝗗𝗜𝗖𝗧\n" +
+                "𝗧𝗛𝗘 𝗙𝗨𝗧𝗨𝗥𝗘 𝗜𝗦  𝗧𝗢 𝗖𝗥𝗘𝗔𝗧𝗘\n" +
+                "𝗜𝗧 𝗬𝗢𝗨𝗥𝗦𝗘𝗟𝗙"
+        );
+        tagline.setTextFill(
+                Color.rgb(255,255,255,0.85)
+        );
+        tagline.setFont(
+                Font.font("Arial", FontWeight.BOLD, 15)
+        );
 
 
 
