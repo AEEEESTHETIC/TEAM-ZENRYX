@@ -148,3 +148,11 @@ signUpBox = new VBox(15);
 
         Button sendBtn = new Button("𝗦𝗘𝗡𝗗 𝗥𝗘𝗦𝗘𝗧 𝗟𝗜𝗡𝗞");
         styleButton(sendBtn);  
+     sendBtn.setOnAction(e -> {
+      Alert alert = new Alert(Alert.AlertType.INFORMATION);
+
+            alert.setTitle("𝗥𝗘𝗦𝗘𝗧 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗");
+            alert.setHeaderText(null);
+            alert.setContentText("𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗 𝗥𝗘𝗦𝗘𝗧 𝗟𝗜𝗡𝗞 𝗦𝗘𝗡𝗧!");
+            alert.showAndWait();
+        });
