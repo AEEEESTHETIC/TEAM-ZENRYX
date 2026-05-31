@@ -102,7 +102,16 @@ signUpBox = new VBox(15);
         TextField username = new TextField();
         username.setPromptText("𝗨𝗦𝗘𝗥 𝗡𝗔𝗠𝗘");
         styleField(username);
+        PasswordField password = new PasswordField();
+        password.setPromptText("𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗");
+        styleField(password);
 
+        CheckBox terms = new CheckBox(
+                "𝗜 𝗔𝗖𝗖𝗘𝗣𝗧 𝗧𝗘𝗥𝗠𝗦 𝗔𝗡𝗗 𝗖𝗢𝗡𝗗𝗜𝗧𝗜𝗢𝗡𝗦"
+        );
+        terms.setTextFill(Color.WHITE);
+        Button signupBtn = new Button("𝗖𝗥𝗘𝗔𝗧𝗘 𝗔𝗖𝗖𝗢𝗨𝗡𝗧");
+        styleButton(signupBtn);
 
 
 
