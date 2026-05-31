@@ -51,6 +51,38 @@ public void start(Stage primaryStage) {
         tagline.setFont(
                 Font.font("Arial", FontWeight.BOLD, 15)
         );
+         Region spacer = new Region();
+        VBox.setVgrow(spacer, Priority.ALWAYS);
+        titleLabel = new Label("LOGIN");
+        titleLabel.setTextFill(Color.WHITE);
+        titleLabel.setFont(
+                Font.font("Arial", FontWeight.LIGHT, 42)
+        );
+        descLabel = new Label(
+                "WELCOME BACK!\n" +
+                "LOGIN WITH YOUR ACCOUNT."
+        );
+        descLabel.setTextFill(Color.WHITE);
+        descLabel.setFont(
+                Font.font("Arial", FontWeight.NORMAL, 16)
+        );
+        leftPanel.getChildren().addAll(
+                logo,
+                developerText,
+                tagline,
+                spacer,
+                titleLabel,
+                descLabel
+        );
+        StackPane rightPanel = new StackPane();
+        rightPanel.setPadding(new Insets(40));
+        rightPanel.setStyle(
+                "-fx-background-color: #242424;" +
+                "-fx-background-radius: 30 0 0 30;"
+        );
+        loginBox = new VBox(18);
+        loginBox.setAlignment(Pos.CENTER_LEFT);
+        loginBox.setMaxWidth(420);
 
 
 
