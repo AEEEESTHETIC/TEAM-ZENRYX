@@ -197,3 +197,42 @@ signUpBox = new VBox(15);
             alert.setContentText("𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗 𝗥𝗘𝗦𝗘𝗧 𝗟𝗜𝗡𝗞 𝗦𝗘𝗡𝗧!");
             alert.showAndWait();
         });
+      Hyperlink backLogin = new Hyperlink("←𝗕𝗔𝗖𝗞 𝗧𝗢 𝗟𝗢𝗚𝗜𝗡");
+        backLogin.setStyle("-fx-text-fill: #00A8FF;");
+        forgotBox.getChildren().addAll(
+                forgotTitle,
+                forgotDesc,
+                forgotEmail,
+                sendBtn,
+                backLogin
+        );
+        createLink.setOnAction(e -> {
+            loginBox.setVisible(false);
+            forgotBox.setVisible(false);
+            signUpBox.setVisible(true);
+            fadeIn(signUpBox);
+            titleLabel.setText("𝗖𝗥𝗘𝗔𝗧𝗘\n𝗔𝗖𝗖𝗢𝗨𝗡𝗧");
+            descLabel.setText(
+                    "𝗖𝗥𝗘𝗔𝗧𝗘 𝗬𝗢𝗨𝗥 𝗡𝗘𝗪 𝗔𝗖𝗖𝗢𝗨𝗡𝗧\n𝗔𝗡𝗗 𝗦𝗧𝗔𝗥𝗧 𝗨𝗦𝗜𝗡𝗚 𝗧𝗛𝗘 𝗦𝗬𝗦𝗧𝗘𝗠."
+            );
+        });
+        loginLink.setOnAction(e -> {
+            signUpBox.setVisible(false);
+            forgotBox.setVisible(false);
+            loginBox.setVisible(true);
+            fadeIn(loginBox);
+            titleLabel.setText("𝗟𝗢𝗚𝗜𝗡");
+            descLabel.setText(
+                    "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗕𝗔𝗖𝗞!\n𝗟𝗢𝗚𝗜𝗡 𝗪𝗜𝗧𝗛 𝗬𝗢𝗨𝗥 𝗔𝗖𝗖𝗢𝗨𝗡𝗧."
+            );
+        });
+        forgotLink.setOnAction(e -> {
+            loginBox.setVisible(false);
+            signUpBox.setVisible(false);
+            forgotBox.setVisible(true);
+            fadeIn(forgotBox);
+            titleLabel.setText("𝗙𝗢𝗥𝗚𝗢𝗧\n𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗");
+            descLabel.setText(
+                    "𝗥𝗘𝗦𝗘𝗧 𝗬𝗢𝗨𝗥 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗\n𝗔𝗡𝗗 𝗥𝗘𝗖𝗢𝗩𝗘𝗥 𝗬𝗢𝗨𝗥 𝗔𝗖𝗖𝗢𝗨𝗡𝗧."
+            );
+        });
