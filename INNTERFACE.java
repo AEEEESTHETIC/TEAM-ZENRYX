@@ -145,7 +145,7 @@ signUpBox = new VBox(15);
         Button signupBtn = new Button("𝗖𝗥𝗘𝗔𝗧𝗘 𝗔𝗖𝗖𝗢𝗨𝗡𝗧");
         styleButton(signupBtn);
 
-signupBtn.setOnAction(e -> {
+        signupBtn.setOnAction(e -> {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("𝗔𝗖𝗖𝗢𝗨𝗡𝗧");
             alert.setHeaderText(null);
