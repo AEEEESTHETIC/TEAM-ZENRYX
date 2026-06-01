@@ -145,7 +145,30 @@ signUpBox = new VBox(15);
         Button signupBtn = new Button("𝗖𝗥𝗘𝗔𝗧𝗘 𝗔𝗖𝗖𝗢𝗨𝗡𝗧");
         styleButton(signupBtn);
 
+signupBtn.setOnAction(e -> {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("𝗔𝗖𝗖𝗢𝗨𝗡𝗧");
+            alert.setHeaderText(null);
+            alert.setContentText("𝗔𝗖𝗖𝗢𝗨𝗡𝗧 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬!");
+            alert.showAndWait();
+        });
+        Label loginText = new Label("𝗔𝗟𝗥𝗘𝗔𝗗𝗬 𝗛𝗔𝗩𝗘 𝗔𝗡 𝗔𝗖𝗖𝗢𝗨𝗡𝗧 ?");
+        loginText.setTextFill(Color.LIGHTGRAY);
+        
+        Hyperlink loginLink = new Hyperlink("←𝗟𝗢𝗚𝗜𝗡");
+        loginLink.setStyle("-fx-text-fill: #00A8FF;");
 
+        HBox loginSwitch = new HBox(5, loginText, loginLink);
+        signUpBox.getChildren().addAll(
+                signupTitle,
+                fullName,
+                email,
+                username,
+                password,
+                terms,
+                signupBtn,
+                loginSwitch
+        );
 
 
 
