@@ -336,3 +336,37 @@ signUpBox = new VBox(15);
         primaryStage.setResizable(false);
         primaryStage.show();
     }
+    private void styleButton(Button btn) {
+        btn.setStyle(
+                "-fx-background-color: linear-gradient(to right, #00A8FF, #007BFF);" +
+                "-fx-text-fill: white;" +
+                "-fx-font-size: 15;" +
+                "-fx-font-weight: bold;" +
+                "-fx-background-radius: 10;" +
+                "-fx-cursor: hand;" +
+                "-fx-effect: dropshadow(gaussian, rgba(0,168,255,0.4), 15,0,0,0);"
+        );
+        btn.setPrefWidth(350);
+        btn.setPrefHeight(45);
+    }
+    private void addHoverEffect(Button btn) {
+
+        btn.setOnMouseEntered(e -> btn.setStyle(
+                "-fx-background-color: linear-gradient(to right, #009dff, #006eff);" +
+                "-fx-text-fill: white;" +
+                "-fx-font-size: 15;" +
+                "-fx-font-weight: bold;" +
+                "-fx-background-radius: 10;" +
+                "-fx-cursor: hand;" +
+                "-fx-effect: dropshadow(gaussian, rgba(0,168,255,0.6), 20,0,0,0);"
+        ));
+        btn.setOnMouseExited(e -> btn.setStyle(
+                "-fx-background-color: linear-gradient(to right, #00A8FF, #007BFF);" +
+                "-fx-text-fill: white;" +
+                "-fx-font-size: 15;" +
+                "-fx-font-weight: bold;" +
+                "-fx-background-radius: 10;" +
+                "-fx-cursor: hand;" +
+                "-fx-effect: dropshadow(gaussian, rgba(0,168,255,0.4), 15,0,0,0);"
+        ));
+    }
