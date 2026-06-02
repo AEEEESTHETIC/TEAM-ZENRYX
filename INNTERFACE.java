@@ -83,6 +83,49 @@ public void start(Stage primaryStage) {
         loginBox = new VBox(18);
         loginBox.setAlignment(Pos.CENTER_LEFT);
         loginBox.setMaxWidth(420);
+     Label loginTitle = new Label("𝗟𝗢𝗚 𝗜𝗡");
+        loginTitle.setTextFill(Color.web("#00A8FF"));
+        loginTitle.setFont(Font.font("Arial", FontWeight.NORMAL, 32));
+        TextField loginUser = new TextField();
+        loginUser.setPromptText("𝗨𝗦𝗘𝗥 𝗡𝗔𝗠𝗘");
+        styleField(loginUser);
+
+        PasswordField loginPass = new PasswordField();
+        loginPass.setPromptText("𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗");
+        styleField(loginPass);
+
+        Hyperlink forgotLink = new Hyperlink("𝗙𝗢𝗥𝗚𝗢𝗧𝗧𝗘𝗡 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗");
+        forgotLink.setStyle("-fx-text-fill: #00A8FF;");
+
+        Button loginBtn = new Button("𝗟𝗢𝗚𝗜𝗡");
+        styleButton(loginBtn);
+
+        loginBtn.setOnAction(e -> {
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+
+            alert.setTitle("LOGIN");
+            alert.setHeaderText(null);
+            alert.setContentText("LOGIN SUCCESSFUL!");
+
+            alert.showAndWait();
+        });
+        Label createText = new Label("𝗗𝗢𝗡𝗧 𝗛𝗔𝗩𝗘 𝗔𝗡 𝗔𝗖𝗖𝗢𝗨𝗡𝗧 ?");
+        createText.setTextFill(Color.LIGHTGRAY);
+
+        Hyperlink createLink = new Hyperlink("𝗖𝗥𝗘𝗔𝗧𝗘 𝗔𝗖𝗖𝗢𝗨𝗡𝗧");
+        createLink.setStyle("-fx-text-fill: #00A8FF;");
+
+        HBox createBox = new HBox(5, createText, createLink);
+
+        loginBox.getChildren().addAll(
+                loginTitle,
+                loginUser,
+                loginPass,
+                forgotLink,
+                loginBtn,
+                createBox
+        );
 
 
 
