@@ -370,3 +370,16 @@ signUpBox = new VBox(15);
                 "-fx-effect: dropshadow(gaussian, rgba(0,168,255,0.4), 15,0,0,0);"
         ));
     }
+    private void fadeIn(VBox box) {
+        FadeTransition fade = new FadeTransition(
+                Duration.millis(400),
+                box
+        );
+        fade.setFromValue(0);
+        fade.setToValue(1);
+        fade.play();
+    }
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
