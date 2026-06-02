@@ -302,3 +302,32 @@ signUpBox = new VBox(15);
                     "𝗥𝗘𝗦𝗘𝗧 𝗬𝗢𝗨𝗥 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗\n𝗔𝗡𝗗 𝗥𝗘𝗖𝗢𝗩𝗘𝗥 𝗬𝗢𝗨𝗥 𝗔𝗖𝗖𝗢𝗨𝗡𝗧."
             );
         });
+       backLogin.setOnAction(e -> {
+            forgotBox.setVisible(false);
+            signUpBox.setVisible(false);
+            loginBox.setVisible(true);
+            fadeIn(loginBox);
+            titleLabel.setText("𝗟𝗢𝗚𝗜𝗡");
+            descLabel.setText(
+                    "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗕𝗔𝗖𝗞!\n𝗟𝗢𝗚𝗜𝗡 𝗪𝗜𝗧𝗛 𝗬𝗢𝗨𝗥 𝗔𝗖𝗖𝗢𝗨𝗡𝗧."
+            );
+        });
+        addHoverEffect(loginBtn);
+        addHoverEffect(signupBtn);
+        addHoverEffect(sendBtn);
+        rightPanel.getChildren().addAll(
+                loginBox,
+                signUpBox,
+                forgotBox
+        );
+        root.getChildren().addAll(
+                leftPanel,
+                rightPanel
+        );
+        HBox.setHgrow(rightPanel, Priority.ALWAYS);
+        Scene scene = new Scene(root, 950, 560);
+        primaryStage.setTitle("Modern Auth System");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.show();
+    }
