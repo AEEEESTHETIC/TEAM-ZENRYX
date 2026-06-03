@@ -277,7 +277,7 @@ signUpBox = new VBox(15);
         );
         HBox.setHgrow(rightPanel, Priority.ALWAYS);
         Scene scene = new Scene(root, 950, 560);
-        primaryStage.setTitle("Modern Auth System");
+        primaryStage.setTitle("LOG IN SINGUP AND FORGOT INTERTFACE");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
