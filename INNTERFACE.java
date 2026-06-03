@@ -10,9 +10,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
-import javafx.util.Duration
-
-
+import javafx.util.Duration;
 
 public class INTERFACE extends Application {
 
@@ -131,36 +129,6 @@ public void start(Stage primaryStage) {
                 loginBtn,
                 createBox
         );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //NONDINI WILL START HER WORK AFTER THIS LINE:
 signUpBox = new VBox(15);
         signUpBox.setAlignment(Pos.CENTER_LEFT);
@@ -217,28 +185,6 @@ signUpBox = new VBox(15);
                 signupBtn,
                 loginSwitch
         );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //NOWSHIN WILL START HER WORK AFTER THIS LINE:
     forgotBox = new VBox(20);
     forgotBox.setAlignment(Pos.CENTER_LEFT);
@@ -335,6 +281,20 @@ signUpBox = new VBox(15);
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
+    }
+      private void styleField(Control field) {
+        field.setStyle(
+                "-fx-background-color: #2b2b2b;" +
+                "-fx-border-color: #555555;" +
+                "-fx-border-radius: 10;" +
+                "-fx-background-radius: 10;" +
+                "-fx-text-fill: white;" +
+                "-fx-prompt-text-fill: #999999;" +
+                "-fx-padding: 12;" +
+                "-fx-font-size: 14;" +
+                "-fx-effect: dropshadow(gaussian, rgba(0,168,255,0.08), 10,0,0,0);"
+        );
+        field.setPrefHeight(45);
     }
     private void styleButton(Button btn) {
         btn.setStyle(
